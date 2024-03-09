@@ -1,0 +1,214 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Gentium+Plus:ital@1&family=Koulen&family=Oswald:wght@300&family=Raleway:ital,wght@0,100;1,200&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+}
+body{
+    min-height:100vh;
+    width:100;
+    background-image:url("../images/ak.gif");
+    background-size: cover;
+}
+
+.big-container{
+    width:100%;
+    height:95vh;
+    max-width:1200px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    animation: fade 3s ease-in-out forwards;
+    opacity:0;
+}
+@keyframes fade{
+    to {opacity:1;}
+}
+.container{
+    width:100%;
+    height:100%;
+    overflow: auto;
+}
+::-webkit-scrollbar{
+    display:none;
+    color:#0f1829;
+}
+video{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display:block;
+    object-fit: cover;
+    z-index: -1;
+}
+header{
+     min-height:60px;
+     width:100%;
+     border-bottom:1px solid grey;
+     overflow:hidden;
+     animation: fade 3s ease-in-out forwards;
+     animation-delay: 1s;
+     opacity:0;
+}
+header .logo{
+    float:left;
+    margin-left:10px;
+}
+header .logo h1{
+    color:white;
+    font-family: 'Dancing Script', cursive;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    line-height: 60px;
+
+}
+header nav{
+    float:right;
+    margin-right:20px;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+}
+nav ul{
+    margin-right: 30px;
+    min-height: 50px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+a{
+    text-decoration:none;
+    color:white;
+    margin-top: 5px;
+    padding:8px 15px;
+    text-transform: uppercase;
+    display:inline-block;
+    border:1px solid white;
+    border-radius:20px;
+    font-family: 'Gentium Plus', serif;
+
+}
+.active{
+    color:white;
+    border-radius:20px;
+    border:1px solid white;
+    
+}
+a:hover{
+    background-color:white;
+    color:#0f1829;
+    border-radius:30px;
+}
+section{
+    width:100%;
+    min-height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+
+}
+section h2{
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+section p{
+    line-height:1.4;
+    margin: 15px 0;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    color:rgb(243, 234, 234);
+}
+footer{
+    width:100%;
+    text-align: center;
+    color: white;
+}
+footer h2{
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    margin-bottom:20px;
+    font-family: 'Oswald', sans-serif;
+}
+footer p{
+    max-width:600px;
+    margin:15px auto;
+    line-height: 1.4;
+    letter-spacing: 3px;
+    margin-bottom:20px;
+    font-family: 'Raleway', sans-serif;
+    color:rgb(243, 234, 234);
+}
+h3{
+    color:rgb(169, 167, 167);
+    font-family: 'Raleway', sans-serif;
+}
+ span{
+     color:white;
+     font-family: 'Raleway', sans-serif;
+}
+.row{
+    color:white;
+    font-size: 30px;
+    border-top: 2px inset white;
+
+}
+#videolayout{
+    width:100%;
+    height:100%;
+}
+
+
+@media (max-width:1000px){
+ header .logo,header nav{
+        width:100%;
+        margin:0;
+        text-align: center;
+
+
+    }
+}
+@media (max-width:500px){
+    header .logo,header nav{
+           width:100%;
+           margin:0;
+           text-align: center;
+           font-size:10px;
+   
+   
+       }
+   }
+@media (max-width:1000px){
+    section h2,footer h2{
+        font-size:30px;
+        letter-spacing: 2px;
+    }
+}
+@media (max-width:500px){
+    section h2,footer h2{
+        font-size:15px;
+        letter-spacing: 1px;
+    }
+}
+@media (max-width:500px){
+    section p,footer h3{
+        font-size:10px;
+        letter-spacing: 1px;
+    }
+}
